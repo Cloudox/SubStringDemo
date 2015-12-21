@@ -11,7 +11,7 @@
 ![](https://github.com/Cloudox/SubStringDemo/blob/master/SubStringDemo.png)
 
 ## 实现方法
-#### 截取某个下标之前的字符串，结果`不包含`下标对应的字符
+#### 1.截取某个下标之前的字符串，结果`不包含`下标对应的字符
 ```Objective-C
 // 原字符串  
 NSString *originalStr = @"Hello World";  
@@ -21,7 +21,7 @@ NSString *toStr = [originalStr substringToIndex:5];
 ```
 这里字母"o"对应的下标为4，因为结果不包含下标对应的字符，所以要截取5之前的字符串。  
   
-#### 截取某个下标之后的字符串，结果`包含`下标对应的字符
+#### 2.截取某个下标之后的字符串，结果`包含`下标对应的字符
 ```Objective-C
 // 原字符串  
 NSString *originalStr = @"Hello World";  
@@ -31,7 +31,7 @@ NSString *fromStr = [originalStr substringFromIndex:6];
 ```
 这里字母"W"对应的下标为6，因为结果包含下标对应的字符，所以从6开始截取。  
   
-#### 截取一段字符串
+#### 3.截取一段字符串
 ```Objective-C
 // 原字符串  
 NSString *originalStr = @"Hello World";  
