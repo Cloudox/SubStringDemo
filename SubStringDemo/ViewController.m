@@ -42,10 +42,13 @@
     NSString *originalStr = @"Hello World";
     // 下标之前的子字符串，不含下标对应的字符
     NSString *toStr = [originalStr substringToIndex:5];
+    // 结果为“Hello”
     // 下标之后的子字符串，包含下标对应字符
     NSString *fromStr = [originalStr substringFromIndex:6];
+    // 结果为“World”
     // 下标之间的子字符串：第一个参数为开始下标，第二个参数为长度
     NSString *subStr = [originalStr substringWithRange:NSMakeRange(6, 2)];
+    // 结果为“Wo”
     
     // 放入label显示
     originalLabel.text = [NSString stringWithFormat:@"原字符串：%@", originalStr];
